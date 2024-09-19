@@ -6,7 +6,7 @@ const Dec = () => {
  const{id}=useParams()
  const[data,setdata]=useState({})
  const getdata=()=>{
-    axios.get(`http://localhost:3000/Product/${id}`).then((res)=>{
+    axios.get(`https://demo-backend-1-tefk.onrender.com/Product/${id}`).then((res)=>{
       
         setdata(res.data)
     }).catch((err)=>{console.log(err)})

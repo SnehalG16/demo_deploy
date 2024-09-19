@@ -23,7 +23,7 @@ const Edit =()=>{
   }
   const handlesubmit=(e)=>{
     e.preventDefault()
-     axios.put(`http://localhost:3000/Product/${id}`,formdata).then((res)=>{
+     axios.put(`https://demo-backend-1-tefk.onrender.com/Product/${id}`,formdata).then((res)=>{
       console.log(formdata)
       alert("DATA UPDATE")
      })

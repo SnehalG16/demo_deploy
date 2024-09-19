@@ -19,7 +19,7 @@ const Addpage =()=>{
   }
   const handlesubmit=(e)=>{
     e.preventDefault()
-     axios.post(" http://localhost:3000/Product",formdata).then((res)=>{
+     axios.post("https://demo-backend-1-tefk.onrender.com/Product",formdata).then((res)=>{
       console.log(res)
       alert("DATA ADDED")
      })

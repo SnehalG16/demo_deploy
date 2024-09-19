@@ -11,7 +11,7 @@ const Product = () => {
   const [search,setsearch]=useState("")
   console.log(categoryoption)
   const getdatafunction = () => {
-    axios.get("http://localhost:3000/Product", {
+    axios.get("https://demo-backend-1-tefk.onrender.com/Product", {
       params:
       {
          _page: page,
@@ -28,7 +28,7 @@ const Product = () => {
   }
   const handeldelete = (id) => {
 
-    axios.delete(`http://localhost:3000/Product/${id}`)
+    axios.delete(`https://demo-backend-1-tefk.onrender.com/Product/${id}`)
       .then((res) => {
         alert("DELETE")
         getdatafunction()
